@@ -65,6 +65,7 @@
   <Sequence DisplayName="Main" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="selection" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\andu.morie\AppData\Local\Programs\Python\Python36\" Name="PythonPath" />
     </Sequence.Variables>
     <ui:CustomInput DisplayName="Custom Input" sap2010:WorkflowViewState.IdRef="CustomInput_1" Result="[selection]" URI="main.html" />
     <If Condition="[selection.Trim &lt;&gt; &quot;&quot;]" sap2010:WorkflowViewState.IdRef="If_2">
@@ -74,7 +75,7 @@
             <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CaptureAndTrain.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                  <InArgument x:TypeArguments="x:String" x:Key="PythonPath">[PythonPath]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
@@ -82,14 +83,14 @@
           <If.Else>
             <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CaptureAndIdentify.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                <InArgument x:TypeArguments="x:String" x:Key="PythonPath">[PythonPath]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </If.Else>
         </If>
       </If.Then>
     </If>
-    <sads:DebugSymbol.Symbol>d1RDOlxVc2Vyc1xhbmR1Lm1vcmllXE9uZURyaXZlIC0gVWlQYXRoXERvY3VtZW50c1xXb3JrXERlbW9zXEZhY2VSZWNvZ25pdGlvblxNYWluLnhhbWwNQQNdDgIBAUUFRYcBAgENRgVbCgIBAkV5RYQBAgEQRWdFdAIBDkYTRjsCAQNICVkOAgEFSBdIPQIBBkoNUBgCAQpTDVclAgEISw9PJwIBC1O5AVPSAQIBCUu7AUvRAQIBDA==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d11DOlxVc2Vyc1xhbmR1Lm1vcmllXE9uZURyaXZlIC0gVWlQYXRoXERvY3VtZW50c1xXb3JrXERlbW9zXEZhY2VSZWNvZ25pdGlvbkZyYW1ld29ya1xNYWluLnhhbWwQQQNeDgIBAUQ0RHECAQJGBUaHAQIBEkcFXAoCAQNGeUaEAQIBFUZnRnQCARNHE0c7AgEESQlaDgIBBkkXST0CAQdLDVEYAgENVA1YJQIBCUwPUCcCAQ5WS1ZXAgELVLkBVNIBAgEKTk1OWQIBEEy7AUzRAQIBDw==</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -112,7 +113,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="862,837" />
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="862,877" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Main_1"
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
@@ -10,6 +10,13 @@
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
  xmlns:ui="http://schemas.uipath.com/workflow/activities"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="PythonPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -98,7 +105,7 @@
             <InArgument x:TypeArguments="x:String">[credentials.Split(","c)(1)]</InArgument>
           </Assign.Value>
         </Assign>
-        <p:PythonScope DisplayName="Python Scope" sap2010:WorkflowViewState.IdRef="PythonScope_2" Path="C:\Users\andu.morie\AppData\Local\Programs\Python\Python36\" TargetPlatform="x64">
+        <p:PythonScope DisplayName="Python Scope" sap2010:WorkflowViewState.IdRef="PythonScope_2" Path="[PythonPath]" TargetPlatform="x64">
           <p:PythonScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -149,7 +156,7 @@
         </Assign.Value>
       </Assign>
       <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Directory" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;FaceRecognition\train_img\&quot; + name]" />
-      <p:PythonScope DisplayName="Python Scope" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:\Users\andu.morie\AppData\Local\Programs\Python\Python36\" TargetPlatform="x64">
+      <p:PythonScope DisplayName="Python Scope" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="[PythonPath]" TargetPlatform="x64">
         <p:PythonScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -173,11 +180,11 @@
       <Delay Duration="00:00:02" sap2010:WorkflowViewState.IdRef="Delay_1" />
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="_train.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          <InArgument x:TypeArguments="x:String" x:Key="PythonPath">[PythonPath]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <sads:DebugSymbol.Symbol>d19DOlxVc2Vyc1xhbmR1Lm1vcmllXE9uZURyaXZlIC0gVWlQYXRoXERvY3VtZW50c1xXb3JrXERlbW9zXEZhY2VSZWNvZ25pdGlvblxDYXB0dXJlQW5kVHJhaW4ueGFtbEpDA7UBDgIBAUgFfw8CATaAAQWNAQ8CASiOAQWzARACAQJIW0iNAQIBZ0kHfhICATeAAVuAAXICATSBAQeMARICASmPAQeWARACASOXAQeXAcIBAgEgmAEHrAEXAgEHrQEHrQFOAgEFrgEHsgEfAgEDTwlPjgECAWNQCVQOAgFeVQlcEgIBWV0JZBICAVRlCX0ZAgE4ggEJhgEaAgEvhwEJiwEOAgEqlAEylAE9AgEmkQEzkQE5AgEklwGOAZcBvwECASGYAWaYAaMBAgEfngENqQEYAgEIrQEXrQEhAgEGrgGzAa4BwAECAQRPf0+LAQIBZk9rT3oCAWRQF1A1AgFfUg1SoAECAWFaNFpQAgFcVzVXPwIBWmI0YlACAVdfNV8/AgFVZWhlpQECAVNrD3oaAgE5ggGQAYIBpAECATOEATWEATsCATGCAasBggG3AQIBMIcBF4cBLgIBK4kBDYkB2AECAS2jAT6jAV8CAQmlAQ+lAbsBAgEbpgEPpgHGAQIBEqcBD6cBtwECAQ2oAQ+oAaYCAgEKUn5SnQECAWJwQHBhAgE6chFyvQECAU9zEXPYAQIBRnQRdLIBAgFBdRF5FgIBO4kBogGJAcYBAgEupQGaAaUBuAECAR6lAYQBpQGOAQIBHKYBowGmAbQBAgEYpgF8pgGGAQIBFqYBvAGmAcMBAgEUpgGMAaYBlwECAROnAaIBpwG0AQIBEKcBkwGnAZoBAgEOqAGkAagBlAICAQtynAFyugECAVJyhgFykAECAVBzrAFzxgECAUxzfnOIAQIBSnPOAXPVAQIBSHOOAXOgAQIBR3SlAXSvAQIBRHSWAXSdAQIBQnUfdVECATx3FXfGAQIBPneqAXe0AQIBPw==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d2hDOlxVc2Vyc1xhbmR1Lm1vcmllXE9uZURyaXZlIC0gVWlQYXRoXERvY3VtZW50c1xXb3JrXERlbW9zXEZhY2VSZWNvZ25pdGlvbkZyYW1ld29ya1xDYXB0dXJlQW5kVHJhaW4ueGFtbEtKA7wBDgIBAU8FhgEPAgE5hwEFlAEPAgErlQEFugEQAgECT1tPjQECAWtQB4UBEgIBOocBW4cBcgIBN4gBB5MBEgIBLJYBB50BEAIBJp4BB54BwgECASOfAQezARcCAQm0AQe0AU4CAQe1AQe5AR8CAQNWCVaOAQIBZ1cJWw4CAWJcCWMSAgFdZAlrEgIBWGwJhAEZAgE7iQEJjQEaAgEyjgEJkgEOAgEtmwEymwE9AgEpmAEzmAE5AgEnngGOAZ4BvwECASSfAWafAXQCASGlAQ2wARgCAQq0ARe0ASECAQi3AUW3AVECAQW1AbMBtQHAAQIBBFZ/VosBAgFqVmtWegIBaFcXVzUCAWNZDVmgAQIBZWE0YVACAWBeNV4/AgFeaTRpUAIBW2Y1Zj8CAVlsaGx2AgFWcg+BARoCATyJAZABiQGkAQIBNosBNYsBOwIBNIkBqwGJAbcBAgEzjgEXjgEuAgEukAENkAHYAQIBMKoBPqoBXwIBC6wBD6wBuwECAR2tAQ+tAcYBAgEUrgEPrgG3AQIBD68BD68BpgICAQxZflmdAQIBZndAd2ECAT15EXm9AQIBUnoRetgBAgFJexF7sgECAUR8EYABFgIBPpABogGQAcYBAgExrAGaAawBuAECASCsAYQBrAGOAQIBHq0BowGtAbQBAgEarQF8rQGGAQIBGK0BvAGtAcMBAgEWrQGMAa0BlwECARWuAaIBrgG0AQIBEq4BkwGuAZoBAgEQrwGkAa8BlAICAQ15nAF5ugECAVV5hgF5kAECAVN6rAF6xgECAU96fnqIAQIBTXrOAXrVAQIBS3qOAXqgAQIBSnulAXuvAQIBR3uWAXudAQIBRXwffFECAT9+FX7GAQIBQX6qAX60AQIBQg==</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -248,7 +255,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="610,3317" />
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="610,3277" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
