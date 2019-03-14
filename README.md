@@ -1,5 +1,5 @@
 1. Install Python (including pip) using the provided installation kit in the Prerequisites folder
 2. Run install.bat in the Prerequisites folder
-3. Change the PythonPath variable to your machine's Python path (You can find it by going to My Computer > Properties > Advanced System Settings > Environment Variables > System Variables > Path). You might have to add the Python installation folder to your current Path variable if it's not there already.
+3. The previous batch script should've automatically created a config.csv file in the main project folder containing your machine's Python path, but be sure to check and manually edit it if the workflow gives a Python error when running. (You can find your Python path by going to My Computer > Properties > Advanced System Settings > Environment Variables > System Variables > Path. You might have to add the Python installation folder to your current Path variable if it's not there already.)
 4. Run the framework from the Main.xaml workflow inside UiPath Studio
 5. Customize the Process.xaml workflow to include your own process to be run after the face recognition
