@@ -205,40 +205,6 @@
           "lib/net40/FSharp.Core.dll": {}
         }
       },
-      "GoogleSpeechActivities/1.8.0": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/Google.Api.CommonProtos.dll": {},
-          "lib/Google.Api.Gax.Grpc.dll": {},
-          "lib/Google.Api.Gax.Rest.dll": {},
-          "lib/Google.Api.Gax.dll": {},
-          "lib/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/Google.Apis.Auth.dll": {},
-          "lib/Google.Apis.Core.dll": {},
-          "lib/Google.Apis.PlatformServices.dll": {},
-          "lib/Google.Apis.dll": {},
-          "lib/Google.Cloud.Speech.V1.dll": {},
-          "lib/Google.Cloud.TextToSpeech.V1.dll": {},
-          "lib/Google.LongRunning.dll": {},
-          "lib/Google.Protobuf.dll": {},
-          "lib/Grpc.Auth.dll": {},
-          "lib/Grpc.Core.dll": {},
-          "lib/NAudio.dll": {},
-          "lib/Newtonsoft.Json.dll": {},
-          "lib/SpeechRecognition.dll": {},
-          "lib/System.Interactive.Async.dll": {},
-          "lib/System.Net.Http.dll": {},
-          "lib/System.Security.Cryptography.Algorithms.dll": {},
-          "lib/System.Security.Cryptography.Encoding.dll": {},
-          "lib/System.Security.Cryptography.Primitives.dll": {},
-          "lib/System.Security.Cryptography.X509Certificates.dll": {},
-          "lib/grpc_csharp_ext.x64.dll": {},
-          "lib/grpc_csharp_ext.x86.dll": {}
-        }
-      },
       "Humanizer.Core/2.4.2": {
         "type": "package",
         "compile": {
@@ -1059,41 +1025,6 @@
         "lib/portable-net45+sl5+netcore45/FSharp.Core.xml"
       ]
     },
-    "GoogleSpeechActivities/1.8.0": {
-      "sha512": "1bKGRZfCmlyK3wULKldI2hU6FFeSWWHkvZrBqr5EOFW/3NJ5loiFqmbr8XuR8p7qTEEO3CRxKMpSrUl7lkOCmA==",
-      "type": "package",
-      "path": "googlespeechactivities/1.8.0",
-      "files": [
-        "googlespeechactivities.1.8.0.nupkg.sha512",
-        "googlespeechactivities.nuspec",
-        "lib/Google.Api.CommonProtos.dll",
-        "lib/Google.Api.Gax.Grpc.dll",
-        "lib/Google.Api.Gax.Rest.dll",
-        "lib/Google.Api.Gax.dll",
-        "lib/Google.Apis.Auth.PlatformServices.dll",
-        "lib/Google.Apis.Auth.dll",
-        "lib/Google.Apis.Core.dll",
-        "lib/Google.Apis.PlatformServices.dll",
-        "lib/Google.Apis.dll",
-        "lib/Google.Cloud.Speech.V1.dll",
-        "lib/Google.Cloud.TextToSpeech.V1.dll",
-        "lib/Google.LongRunning.dll",
-        "lib/Google.Protobuf.dll",
-        "lib/Grpc.Auth.dll",
-        "lib/Grpc.Core.dll",
-        "lib/NAudio.dll",
-        "lib/Newtonsoft.Json.dll",
-        "lib/SpeechRecognition.dll",
-        "lib/System.Interactive.Async.dll",
-        "lib/System.Net.Http.dll",
-        "lib/System.Security.Cryptography.Algorithms.dll",
-        "lib/System.Security.Cryptography.Encoding.dll",
-        "lib/System.Security.Cryptography.Primitives.dll",
-        "lib/System.Security.Cryptography.X509Certificates.dll",
-        "lib/grpc_csharp_ext.x64.dll",
-        "lib/grpc_csharp_ext.x86.dll"
-      ]
-    },
     "Humanizer.Core/2.4.2": {
       "sha512": "bdHOGpZNL92TebkGuaBe/RpxUrDeRDZQLRdFPEbM+miGV1V3ITmw6iZtGYzp44DUd60Fmw5mgHG2HaFSC4hQdQ==",
       "type": "package",
@@ -1812,7 +1743,6 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "GoogleSpeechActivities >= 1.8.0 <= 1.8.0",
       "UiPath.Excel.Activities >= 2.5.0 <= 2.5.0",
       "UiPath.IntelligentOCR.Activities >= 1.3.0 <= 1.3.0",
       "UiPath.Mail.Activities >= 1.3.0 <= 1.3.0",
@@ -1835,11 +1765,6 @@
     "frameworks": {
       "net461": {
         "dependencies": {
-          "GoogleSpeechActivities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.8.0, 1.8.0]"
-          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",

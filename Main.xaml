@@ -94,7 +94,6 @@
                 <InArgument x:TypeArguments="x:String">[configDT.Select("Column0 = 'PythonPath'")(0)(1).ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[PythonPath]" TopMost="True" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
@@ -122,21 +121,20 @@
         </If>
       </If.Then>
     </If>
-    <sads:DebugSymbol.Symbol>d11DOlxVc2Vyc1xhbmR1Lm1vcmllXE9uZURyaXZlIC0gVWlQYXRoXERvY3VtZW50c1xXb3JrXERlbW9zXEZhY2VSZWNvZ25pdGlvbkZyYW1ld29ya1xNYWluLnhhbWwbQwN+DgIBAUgFZSACARVmBWaHAQIBEWcFfAoCAQJIsAFIvAECASNOC2IWAgEWZnlmhAECARRmZ2Z0AgESZxNnOwIBA2kJeg4CAQVSDVghAgEeWQ1gFgIBGmENYcIBAgEXaRdpPQIBBmsNcRgCAQx0DXglAgEIUj1SSQIBIVUTVUICASBSoAFSqAECAR9eOF5yAgEdWzlbRQIBG2GiAWGwAQIBGGwPcCcCAQ12S3ZXAgEKdLkBdNIBAgEJbk1uWQIBD2y7AWzRAQIBDg==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d11DOlxVc2Vyc1xhbmR1Lm1vcmllXE9uZURyaXZlIC0gVWlQYXRoXERvY3VtZW50c1xXb3JrXERlbW9zXEZhY2VSZWNvZ25pdGlvbkZyYW1ld29ya1xNYWluLnhhbWwZQwN9DgIBAUgFZCACARVlBWWHAQIBEWYFewoCAQJIsAFIvAECASBOC2EWAgEWZXllhAECARRlZ2V0AgESZhNmOwIBA2gJeQ4CAQVSDVghAgEbWQ1gFgIBF2gXaD0CAQZqDXAYAgEMcw13JQIBCFI9UkkCAR5VE1VCAgEdUqABUqgBAgEcXjhecgIBGls5W0UCARhrD28nAgENdUt1VwIBCnO5AXPSAQIBCW1NbVkCAQ9ruwFr0QECAQ4=</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="ExcelReadRange_1" sap:VirtualizedContainerService.HintSize="314,59" />
       <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="314,60" />
-      <sap2010:ViewStateData Id="MessageBox_2" sap:VirtualizedContainerService.HintSize="314,59" />
-      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="336,382">
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="336,283">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ExcelApplicationScope_1" sap:VirtualizedContainerService.HintSize="800,491" />
+      <sap2010:ViewStateData Id="ExcelApplicationScope_1" sap:VirtualizedContainerService.HintSize="800,392" />
       <sap2010:ViewStateData Id="CustomInput_1" sap:VirtualizedContainerService.HintSize="800,86" />
       <sap2010:ViewStateData Id="InvokeWorkflowFile_1" sap:VirtualizedContainerService.HintSize="314,87" />
       <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="336,211">
@@ -149,14 +147,14 @@
       <sap2010:ViewStateData Id="InvokeWorkflowFile_2" sap:VirtualizedContainerService.HintSize="314,87" />
       <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="675,359" />
       <sap2010:ViewStateData Id="If_2" sap:VirtualizedContainerService.HintSize="800,507" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="822,1288">
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="822,1189">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="862,1368" />
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="862,1269" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
