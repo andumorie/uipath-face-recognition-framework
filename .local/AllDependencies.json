@@ -2,67 +2,6 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
-      "AForge/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/AForge.dll": {}
-        }
-      },
-      "AForge.Genetic/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "AForge": "2.2.5",
-          "AForge.Math": "2.2.5"
-        },
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/AForge.Genetic.dll": {}
-        }
-      },
-      "AForge.Imaging/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "AForge": "2.2.5",
-          "AForge.Math": "2.2.5"
-        },
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/AForge.Imaging.dll": {}
-        }
-      },
-      "AForge.Math/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "AForge": "2.2.5"
-        },
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/AForge.Math.dll": {}
-        }
-      },
-      "AForge.Neuro/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "AForge": "2.2.5",
-          "AForge.Genetic": "2.2.5",
-          "AForge.Math": "2.2.5"
-        },
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/AForge.Neuro.dll": {}
-        }
-      },
       "AvalonEdit/5.0.3": {
         "type": "package",
         "compile": {
@@ -70,24 +9,6 @@
         },
         "runtime": {
           "lib/Net40/ICSharpCode.AvalonEdit.dll": {}
-        }
-      },
-      "BitMiracle.Docotic.Pdf/5.2.8369": {
-        "type": "package",
-        "compile": {
-          "lib/net40/_._": {}
-        },
-        "runtime": {
-          "lib/net40/BitMiracle.Docotic.Pdf.dll": {}
-        }
-      },
-      "BouncyCastle/1.8.1": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/BouncyCastle.Crypto.dll": {}
         }
       },
       "Caliburn.Micro/3.0.1": {
@@ -196,15 +117,6 @@
           }
         }
       },
-      "FSharp.Core/4.0.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/_._": {}
-        },
-        "runtime": {
-          "lib/net40/FSharp.Core.dll": {}
-        }
-      },
       "Humanizer.Core/2.4.2": {
         "type": "package",
         "compile": {
@@ -212,51 +124,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
-        }
-      },
-      "IvanAkcheurov.NTextCat.Lib/0.2.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/_._": {}
-        },
-        "runtime": {
-          "lib/net40/IvanAkcheurov.Commons.dll": {},
-          "lib/net40/IvanAkcheurov.NClassify.dll": {},
-          "lib/net40/IvanAkcheurov.NTextCat.Lib.dll": {}
-        }
-      },
-      "MathNet.Numerics/4.5.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Numerics",
-          "System.Runtime.Serialization"
-        ],
-        "compile": {
-          "lib/net461/_._": {}
-        },
-        "runtime": {
-          "lib/net461/MathNet.Numerics.dll": {}
-        }
-      },
-      "Metrics.NET/0.5.5": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/Metrics.dll": {}
-        }
-      },
-      "Microsoft.Exchange.WebServices/2.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/40/_._": {}
-        },
-        "runtime": {
-          "lib/40/Microsoft.Exchange.WebServices.Auth.dll": {},
-          "lib/40/Microsoft.Exchange.WebServices.dll": {}
         }
       },
       "Microsoft.Rest.ClientRuntime/2.3.10": {
@@ -304,18 +171,6 @@
           "lib/net40/NPOI.dll": {}
         }
       },
-      "Numsense/0.12.0": {
-        "type": "package",
-        "dependencies": {
-          "FSharp.Core": "4.0.0.1"
-        },
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/Ploeh.Numsense.dll": {}
-        }
-      },
       "SharpZipLib/0.86.0": {
         "type": "package",
         "compile": {
@@ -325,47 +180,6 @@
           "lib/20/ICSharpCode.SharpZipLib.dll": {}
         }
       },
-      "System.Collections.Immutable/1.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
-        }
-      },
-      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard1.1/_._": {}
-        },
-        "runtime": {
-          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.ValueTuple/4.4.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/_._": {}
-        },
-        "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
-        }
-      },
       "UiPath/10.0.6929.25268": {
         "type": "package",
         "compile": {
@@ -373,20 +187,6 @@
         },
         "runtime": {
           "lib/UiPath.Interop.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "UiPath.CefSharpBundle/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net452/_._": {}
-        },
-        "runtime": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.Wpf.dll": {},
-          "lib/net452/CefSharp.dll": {}
         },
         "build": {
           "build/_._": {}
@@ -435,144 +235,6 @@
             "locale": "ru"
           },
           "lib/net452/ru/UiPath.Excel.resources.dll": {
-            "locale": "ru"
-          }
-        }
-      },
-      "UiPath.IntelligentOCR.Activities/1.3.0": {
-        "type": "package",
-        "dependencies": {
-          "AForge.Imaging": "2.2.5",
-          "AForge.Neuro": "2.2.5",
-          "BitMiracle.Docotic.Pdf": "5.2.8369",
-          "CsvHelper": "2.13.5",
-          "IvanAkcheurov.NTextCat.Lib": "0.2.1.1",
-          "MathNet.Numerics": "4.5.1",
-          "Metrics.NET": "0.5.5",
-          "Newtonsoft.Json": "8.0.3",
-          "Numsense": "0.12.0",
-          "System.Collections.Immutable": "1.5.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-          "System.ValueTuple": "4.4.0",
-          "UiPath.CefSharpBundle": "1.0.0",
-          "UiPath.Vision": "1.2.0"
-        },
-        "compile": {
-          "lib/net452/_._": {}
-        },
-        "runtime": {
-          "lib/net452/FCEngine.VisualComponents.dll": {},
-          "lib/net452/Interop.FCEngine.dll": {},
-          "lib/net452/UiPath.IntelligentOCR.Activities.Design.dll": {},
-          "lib/net452/UiPath.IntelligentOCR.Activities.dll": {},
-          "lib/net452/UiPath.IntelligentOCR.dll": {},
-          "lib/net452/UiPath.SmartData.Data.dll": {},
-          "lib/net452/UiPath.SmartData.DataContracts.dll": {},
-          "lib/net452/UiPath.SmartData.Digitization.dll": {},
-          "lib/net452/UiPath.SmartData.ImageProcessing.dll": {},
-          "lib/net452/UiPath.SmartData.Language.dll": {},
-          "lib/net452/UiPath.SmartData.OCR.dll": {},
-          "lib/net452/UiPath.SmartData.PDF.dll": {},
-          "lib/net452/UiPath.SmartData.TableProcessing.dll": {},
-          "lib/net452/UiPath.SmartData.Utils.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.Host.Local.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.Infrastructure.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.Localization.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.PDF.Optimization.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.Storage.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.ValueParsing.dll": {},
-          "lib/net452/UiPath.SmartData.ValidationStation.dll": {}
-        },
-        "resource": {
-          "lib/net452/fr/UiPath.IntelligentOCR.Activities.Design.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.IntelligentOCR.Activities.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.IntelligentOCR.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.SmartData.ValidationStation.Host.Local.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.SmartData.ValidationStation.Localization.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/ja/UiPath.IntelligentOCR.Activities.Design.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.IntelligentOCR.Activities.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.IntelligentOCR.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.SmartData.ValidationStation.Host.Local.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.SmartData.ValidationStation.Localization.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ru/UiPath.IntelligentOCR.Activities.Design.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.IntelligentOCR.Activities.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.IntelligentOCR.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.SmartData.ValidationStation.Host.Local.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.SmartData.ValidationStation.Localization.resources.dll": {
-            "locale": "ru"
-          }
-        }
-      },
-      "UiPath.Mail.Activities/1.3.0": {
-        "type": "package",
-        "dependencies": {
-          "BouncyCastle": "1.8.1",
-          "Microsoft.Exchange.WebServices": "2.2.0"
-        },
-        "compile": {
-          "lib/net452/_._": {}
-        },
-        "runtime": {
-          "lib/net452/MailKit.dll": {},
-          "lib/net452/MimeKit.dll": {},
-          "lib/net452/UiPath.Mail.Activities.Design.dll": {},
-          "lib/net452/UiPath.Mail.Activities.dll": {},
-          "lib/net452/UiPath.Mail.dll": {}
-        },
-        "resource": {
-          "lib/net452/fr/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.Mail.Activities.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.Mail.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/ja/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.Mail.Activities.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.Mail.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ru/UiPath.Mail.Activities.Design.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.Mail.Activities.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net452/ru/UiPath.Mail.resources.dll": {
             "locale": "ru"
           }
         }
@@ -735,64 +397,6 @@
     }
   },
   "libraries": {
-    "AForge/2.2.5": {
-      "sha512": "YJ+8dP3DEwmsPJ/I2P9ggWA6br+ozFl81TCJpVeg1c4px4mh5BftmuO9gNsciDD9hGgiFCnBoedJk9GaYsZHZg==",
-      "type": "package",
-      "path": "aforge/2.2.5",
-      "files": [
-        ".signature.p7s",
-        "aforge.2.2.5.nupkg.sha512",
-        "aforge.nuspec",
-        "lib/AForge.dll",
-        "lib/AForge.xml"
-      ]
-    },
-    "AForge.Genetic/2.2.5": {
-      "sha512": "p4YnuzrE06VRrRiuYFEgwG99gGEKokKAQzsu5ujDBgLA0itJAz3qWZjD7TIysyDQvtykVT6uBbKtoKt+MMlVXw==",
-      "type": "package",
-      "path": "aforge.genetic/2.2.5",
-      "files": [
-        ".signature.p7s",
-        "aforge.genetic.2.2.5.nupkg.sha512",
-        "aforge.genetic.nuspec",
-        "lib/AForge.Genetic.dll",
-        "lib/AForge.Genetic.xml"
-      ]
-    },
-    "AForge.Imaging/2.2.5": {
-      "sha512": "n8l7Zdsm89EFW9Uz4uCO3D428Gu4Q56YxixSMJPruen1c30R8R9Mm8AreTdoOi2XjN5id04JwFFlXYTk8pIIfw==",
-      "type": "package",
-      "path": "aforge.imaging/2.2.5",
-      "files": [
-        "aforge.imaging.2.2.5.nupkg.sha512",
-        "aforge.imaging.nuspec",
-        "lib/AForge.Imaging.dll",
-        "lib/AForge.Imaging.xml"
-      ]
-    },
-    "AForge.Math/2.2.5": {
-      "sha512": "in3TBcuONn8koNpEI7PSQP4hB/NVPU7isT6y9E4tEHQ732PgFrmbhSsY/5K6HBLWocBK0AlpUPUCsx2NKHT1Mw==",
-      "type": "package",
-      "path": "aforge.math/2.2.5",
-      "files": [
-        ".signature.p7s",
-        "aforge.math.2.2.5.nupkg.sha512",
-        "aforge.math.nuspec",
-        "lib/AForge.Math.dll",
-        "lib/AForge.Math.xml"
-      ]
-    },
-    "AForge.Neuro/2.2.5": {
-      "sha512": "eoVtFneS0JrK9PlaqwwAAcA7j92ke+3DCoXAHTHA+KatRki51d5inwyzah/jCF5Pz6b3r0vglkh4IGZ/La2yWg==",
-      "type": "package",
-      "path": "aforge.neuro/2.2.5",
-      "files": [
-        "aforge.neuro.2.2.5.nupkg.sha512",
-        "aforge.neuro.nuspec",
-        "lib/AForge.Neuro.dll",
-        "lib/AForge.Neuro.xml"
-      ]
-    },
     "AvalonEdit/5.0.3": {
       "sha512": "L5CgXRniZRxI/tjoBztVgZnvTL1F/qKrRJa+Q88I0Gl78WRNaqdMkuOlkAsOHTauBGZSQNDO0/X+xIpzfzmLdQ==",
       "type": "package",
@@ -804,33 +408,6 @@
         "lib/Net35/ICSharpCode.AvalonEdit.xml",
         "lib/Net40/ICSharpCode.AvalonEdit.dll",
         "lib/Net40/ICSharpCode.AvalonEdit.xml"
-      ]
-    },
-    "BitMiracle.Docotic.Pdf/5.2.8369": {
-      "sha512": "vN6Z/YdfJ05XgKHorCc6S715Fv/8SAgp6nR9w3HjxyS4KAr/f1zGNjZwuOznxg46qnBiBsCHXMsLkgEmiNEUqg==",
-      "type": "package",
-      "path": "bitmiracle.docotic.pdf/5.2.8369",
-      "files": [
-        "bitmiracle.docotic.pdf.5.2.8369.nupkg.sha512",
-        "bitmiracle.docotic.pdf.nuspec",
-        "lib/net20/BitMiracle.Docotic.Pdf.dll",
-        "lib/net20/BitMiracle.Docotic.Pdf.xml",
-        "lib/net40/BitMiracle.Docotic.Pdf.dll",
-        "lib/net40/BitMiracle.Docotic.Pdf.xml",
-        "lib/netstandard1.3/BitMiracle.Docotic.Pdf.dll",
-        "lib/netstandard1.3/BitMiracle.Docotic.Pdf.xml",
-        "readme.txt"
-      ]
-    },
-    "BouncyCastle/1.8.1": {
-      "sha512": "nH+P67LavO5EcxjKdBxFfRdfdFhivS3Xp3+0br1KcpCI8DM6ksCWy6YYZjk7XFV+VsHGtkUovwIZ/vmCp42geA==",
-      "type": "package",
-      "path": "bouncycastle/1.8.1",
-      "files": [
-        "Readme.txt",
-        "bouncycastle.1.8.1.nupkg.sha512",
-        "bouncycastle.nuspec",
-        "lib/BouncyCastle.Crypto.dll"
       ]
     },
     "Caliburn.Micro/3.0.1": {
@@ -987,44 +564,6 @@
         "tools/install.ps1"
       ]
     },
-    "FSharp.Core/4.0.0.1": {
-      "sha512": "kS1rTerUm+WitqFATzVxs67wYlqmChPen3vMok08ALYPECBGF8U3I3ZE/fYjU0SqMR66HQCzJ/3FlJZ2xTMaDw==",
-      "type": "package",
-      "path": "fsharp.core/4.0.0.1",
-      "files": [
-        ".signature.p7s",
-        "fsharp.core.4.0.0.1.nupkg.sha512",
-        "fsharp.core.nuspec",
-        "lib/net20/FSharp.Core.dll",
-        "lib/net20/FSharp.Core.optdata",
-        "lib/net20/FSharp.Core.sigdata",
-        "lib/net20/FSharp.Core.xml",
-        "lib/net40/FSharp.Core.dll",
-        "lib/net40/FSharp.Core.optdata",
-        "lib/net40/FSharp.Core.sigdata",
-        "lib/net40/FSharp.Core.xml",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.dll",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.optdata",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.sigdata",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.xml",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.dll",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.optdata",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.sigdata",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.optdata",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.sigdata",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.xml",
-        "lib/portable-net45+netcore45/FSharp.Core.dll",
-        "lib/portable-net45+netcore45/FSharp.Core.optdata",
-        "lib/portable-net45+netcore45/FSharp.Core.sigdata",
-        "lib/portable-net45+netcore45/FSharp.Core.xml",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.dll",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.optdata",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.sigdata",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.xml"
-      ]
-    },
     "Humanizer.Core/2.4.2": {
       "sha512": "bdHOGpZNL92TebkGuaBe/RpxUrDeRDZQLRdFPEbM+miGV1V3ITmw6iZtGYzp44DUd60Fmw5mgHG2HaFSC4hQdQ==",
       "type": "package",
@@ -1037,70 +576,6 @@
         "lib/netstandard1.0/Humanizer.xml",
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml"
-      ]
-    },
-    "IvanAkcheurov.NTextCat.Lib/0.2.1.1": {
-      "sha512": "LOvUaSc4V4D/j3lxSEBjnWyfFS4le7Ez/2jzbsNSSeTl9WmZxVhFFgDYLWjA6qb9fJ1tUsy1bmeaRjU3GVumaw==",
-      "type": "package",
-      "path": "ivanakcheurov.ntextcat.lib/0.2.1.1",
-      "files": [
-        "Core14.profile.xml",
-        "ivanakcheurov.ntextcat.lib.0.2.1.1.nupkg.sha512",
-        "ivanakcheurov.ntextcat.lib.nuspec",
-        "lib/net40/IvanAkcheurov.Commons.XML",
-        "lib/net40/IvanAkcheurov.Commons.dll",
-        "lib/net40/IvanAkcheurov.NClassify.XML",
-        "lib/net40/IvanAkcheurov.NClassify.dll",
-        "lib/net40/IvanAkcheurov.NTextCat.Lib.XML",
-        "lib/net40/IvanAkcheurov.NTextCat.Lib.dll"
-      ]
-    },
-    "MathNet.Numerics/4.5.1": {
-      "sha512": "GOjrYhkAbzrObW8SG5X42ET0nbAAsJmJ3edBLk58dbHbiXeA0hZReqVYfRZTsqB/yYZhK8lgDliZjGKnk/gGhg==",
-      "type": "package",
-      "path": "mathnet.numerics/4.5.1",
-      "files": [
-        ".signature.p7s",
-        "lib/net40/MathNet.Numerics.dll",
-        "lib/net40/MathNet.Numerics.xml",
-        "lib/net461/MathNet.Numerics.dll",
-        "lib/net461/MathNet.Numerics.xml",
-        "lib/netstandard1.3/MathNet.Numerics.dll",
-        "lib/netstandard1.3/MathNet.Numerics.xml",
-        "lib/netstandard2.0/MathNet.Numerics.dll",
-        "lib/netstandard2.0/MathNet.Numerics.xml",
-        "mathnet.numerics.4.5.1.nupkg.sha512",
-        "mathnet.numerics.nuspec"
-      ]
-    },
-    "Metrics.NET/0.5.5": {
-      "sha512": "XCUMCCYSSvunHpmgnKjyYxMvj61fAPpATArabFvyLytrfw63pc5SDXHcyP5VqZhiymD/gCJxfsgdqRIfqn7btQ==",
-      "type": "package",
-      "path": "metrics.net/0.5.5",
-      "files": [
-        "lib/net45/Metrics.XML",
-        "lib/net45/Metrics.dll",
-        "lib/net45/Metrics.pdb",
-        "metrics.net.0.5.5.nupkg.sha512",
-        "metrics.net.nuspec"
-      ]
-    },
-    "Microsoft.Exchange.WebServices/2.2.0": {
-      "sha512": "NlkaTD0uWtg9VbiWq0VDWMBPzHFknH3tmstrxt0acrT09LBGqATTjRpsGOODz6tUdX7/dehBinxsf75U5Uw/+A==",
-      "type": "package",
-      "path": "microsoft.exchange.webservices/2.2.0",
-      "files": [
-        "doc/License Terms.rtf",
-        "doc/README.htm",
-        "doc/Redist.txt",
-        "lib/40/Microsoft.Exchange.WebServices.Auth.dll",
-        "lib/40/Microsoft.Exchange.WebServices.Auth.pdb",
-        "lib/40/Microsoft.Exchange.WebServices.Auth.xml",
-        "lib/40/Microsoft.Exchange.WebServices.dll",
-        "lib/40/Microsoft.Exchange.WebServices.pdb",
-        "lib/40/Microsoft.Exchange.WebServices.xml",
-        "microsoft.exchange.webservices.2.2.0.nupkg.sha512",
-        "microsoft.exchange.webservices.nuspec"
       ]
     },
     "Microsoft.Rest.ClientRuntime/2.3.10": {
@@ -1184,17 +659,6 @@
         "npoi.nuspec"
       ]
     },
-    "Numsense/0.12.0": {
-      "sha512": "3FIVDyc7JaLlEx6XchLIqhfdI9/eAGFkf0MZC9/MUyTQewRY6mv7EyYkw+6kZpzMjkZZFcdIplIsXnn5bQgIPw==",
-      "type": "package",
-      "path": "numsense/0.12.0",
-      "files": [
-        "lib/net45/Ploeh.Numsense.XML",
-        "lib/net45/Ploeh.Numsense.dll",
-        "numsense.0.12.0.nupkg.sha512",
-        "numsense.nuspec"
-      ]
-    },
     "SharpZipLib/0.86.0": {
       "sha512": "5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
       "type": "package",
@@ -1206,104 +670,6 @@
         "lib/SL4/SharpZipLib.Silverlight4.dll",
         "sharpziplib.0.86.0.nupkg.sha512",
         "sharpziplib.nuspec"
-      ]
-    },
-    "System.Collections.Immutable/1.5.0": {
-      "sha512": "t4YSqgtqL0rIclav1vjD88bd3zeyVcYTq52cewgjtmahnoCDkkC8VSiQMbAgaQVbmxuDY6QxFxuYILhirqppKA==",
-      "type": "package",
-      "path": "system.collections.immutable/1.5.0",
-      "files": [
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/System.Collections.Immutable.dll",
-        "lib/netstandard1.0/System.Collections.Immutable.xml",
-        "lib/netstandard1.3/System.Collections.Immutable.dll",
-        "lib/netstandard1.3/System.Collections.Immutable.xml",
-        "lib/netstandard2.0/System.Collections.Immutable.dll",
-        "lib/netstandard2.0/System.Collections.Immutable.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.1.5.0.nupkg.sha512",
-        "system.collections.immutable.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
-      "sha512": "cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
-      "type": "package",
-      "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "lib/win8/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "lib/wpa81/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "runtimes/win/lib/netcore50/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
-        "system.runtime.interopservices.runtimeinformation.nuspec"
-      ]
-    },
-    "System.ValueTuple/4.4.0": {
-      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.4.0",
-      "files": [
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net461/System.ValueTuple.xml",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.4.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "UiPath/10.0.6929.25268": {
@@ -1361,96 +727,6 @@
         "uipath.nuspec"
       ]
     },
-    "UiPath.CefSharpBundle/1.0.0": {
-      "sha512": "TN8AUtmqFr4XOytnmtHFAOKazOr1gaGa1DeM3QSL9MFk9UWBYUBEV8NzSl2kc/zY1ZpA2o1fOPQbD6PxVzshgA==",
-      "type": "package",
-      "path": "uipath.cefsharpbundle/1.0.0",
-      "files": [
-        "build/UiPath.CefSharpBundle.targets",
-        "lib/net452/CefSharp.BrowserSubprocess.Core.dll",
-        "lib/net452/CefSharp.BrowserSubprocess.exe",
-        "lib/net452/CefSharp.Core.dll",
-        "lib/net452/CefSharp.Core.xml",
-        "lib/net452/CefSharp.Wpf.XML",
-        "lib/net452/CefSharp.Wpf.dll",
-        "lib/net452/CefSharp.XML",
-        "lib/net452/CefSharp.dll",
-        "lib/net452/UiPath.CEFSharpBundle.dll",
-        "lib/net452/cef.pak",
-        "lib/net452/cef_100_percent.pak",
-        "lib/net452/cef_200_percent.pak",
-        "lib/net452/cef_extensions.pak",
-        "lib/net452/chrome_elf.dll",
-        "lib/net452/d3dcompiler_47.dll",
-        "lib/net452/icudtl.dat",
-        "lib/net452/libEGL.dll",
-        "lib/net452/libGLESv2.dll",
-        "lib/net452/libcef.dll",
-        "lib/net452/locales/am.pak",
-        "lib/net452/locales/ar.pak",
-        "lib/net452/locales/bg.pak",
-        "lib/net452/locales/bn.pak",
-        "lib/net452/locales/ca.pak",
-        "lib/net452/locales/cs.pak",
-        "lib/net452/locales/da.pak",
-        "lib/net452/locales/de.pak",
-        "lib/net452/locales/el.pak",
-        "lib/net452/locales/en-GB.pak",
-        "lib/net452/locales/en-US.pak",
-        "lib/net452/locales/es-419.pak",
-        "lib/net452/locales/es.pak",
-        "lib/net452/locales/et.pak",
-        "lib/net452/locales/fa.pak",
-        "lib/net452/locales/fi.pak",
-        "lib/net452/locales/fil.pak",
-        "lib/net452/locales/fr.pak",
-        "lib/net452/locales/gu.pak",
-        "lib/net452/locales/he.pak",
-        "lib/net452/locales/hi.pak",
-        "lib/net452/locales/hr.pak",
-        "lib/net452/locales/hu.pak",
-        "lib/net452/locales/id.pak",
-        "lib/net452/locales/it.pak",
-        "lib/net452/locales/ja.pak",
-        "lib/net452/locales/kn.pak",
-        "lib/net452/locales/ko.pak",
-        "lib/net452/locales/lt.pak",
-        "lib/net452/locales/lv.pak",
-        "lib/net452/locales/ml.pak",
-        "lib/net452/locales/mr.pak",
-        "lib/net452/locales/ms.pak",
-        "lib/net452/locales/nb.pak",
-        "lib/net452/locales/nl.pak",
-        "lib/net452/locales/pl.pak",
-        "lib/net452/locales/pt-BR.pak",
-        "lib/net452/locales/pt-PT.pak",
-        "lib/net452/locales/ro.pak",
-        "lib/net452/locales/ru.pak",
-        "lib/net452/locales/sk.pak",
-        "lib/net452/locales/sl.pak",
-        "lib/net452/locales/sr.pak",
-        "lib/net452/locales/sv.pak",
-        "lib/net452/locales/sw.pak",
-        "lib/net452/locales/ta.pak",
-        "lib/net452/locales/te.pak",
-        "lib/net452/locales/th.pak",
-        "lib/net452/locales/tr.pak",
-        "lib/net452/locales/uk.pak",
-        "lib/net452/locales/vi.pak",
-        "lib/net452/locales/zh-CN.pak",
-        "lib/net452/locales/zh-TW.pak",
-        "lib/net452/msvcp140.dll",
-        "lib/net452/natives_blob.bin",
-        "lib/net452/snapshot_blob.bin",
-        "lib/net452/swiftshader/libEGL.dll",
-        "lib/net452/swiftshader/libGLESv2.dll",
-        "lib/net452/v8_context_snapshot.bin",
-        "lib/net452/vcruntime140.dll",
-        "license.txt",
-        "uipath.cefsharpbundle.1.0.0.nupkg.sha512",
-        "uipath.cefsharpbundle.nuspec"
-      ]
-    },
     "UiPath.Excel.Activities/2.5.0": {
       "sha512": "CCiiGBAS+Y2wYrAR/tE+II4bH5cNXBdFrbc4C4rKwW7lMqwTupELIhJolDtJSqPT8HqGqvg0Pob832laRxYS0A==",
       "type": "package",
@@ -1470,106 +746,6 @@
         "lib/net452/ru/UiPath.Excel.resources.dll",
         "uipath.excel.activities.2.5.0.nupkg.sha512",
         "uipath.excel.activities.nuspec"
-      ]
-    },
-    "UiPath.IntelligentOCR.Activities/1.3.0": {
-      "sha512": "QuxuwDUfW2oSzRC1P0UH9GXTYRrGPilGa6exXcu8SjHL+2LB7W9AP9iByhH9VNBl+hT9DT1F1qF6m/PafOgX4w==",
-      "type": "package",
-      "path": "uipath.intelligentocr.activities/1.3.0",
-      "files": [
-        "content/Dependencies/NTextCat/languages.profile.xml",
-        "content/Dependencies/SupportedLanguages.json",
-        "content/Dependencies/Word List/words_alpha.txt",
-        "lib/net452/Dependencies/NTextCat/languages.profile.xml",
-        "lib/net452/Dependencies/SupportedLanguages.json",
-        "lib/net452/Dependencies/Word List/words_alpha.txt",
-        "lib/net452/FCEngine.VisualComponents.dll",
-        "lib/net452/Interop.FCEngine.dll",
-        "lib/net452/UiPath.IntelligentOCR.Activities.Design.dll",
-        "lib/net452/UiPath.IntelligentOCR.Activities.dll",
-        "lib/net452/UiPath.IntelligentOCR.dll",
-        "lib/net452/UiPath.SmartData.Data.dll",
-        "lib/net452/UiPath.SmartData.DataContracts.dll",
-        "lib/net452/UiPath.SmartData.Digitization.dll",
-        "lib/net452/UiPath.SmartData.ImageProcessing.dll",
-        "lib/net452/UiPath.SmartData.Language.dll",
-        "lib/net452/UiPath.SmartData.OCR.dll",
-        "lib/net452/UiPath.SmartData.PDF.dll",
-        "lib/net452/UiPath.SmartData.TableProcessing.dll",
-        "lib/net452/UiPath.SmartData.Utils.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.Host.Local.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.Infrastructure.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.Localization.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.PDF.Optimization.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.Storage.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.ValueParsing.dll",
-        "lib/net452/UiPath.SmartData.ValidationStation.dll",
-        "lib/net452/extractioncms/css/default-main-5af2e613.9c72dd8657ac1b879afe.chunk.css",
-        "lib/net452/extractioncms/css/vendor-7274e1de.53009c1536125cc5e5a2.chunk.css",
-        "lib/net452/extractioncms/css/vendor-7d359b94.5ffe9fa8bdd4412d58fc.chunk.css",
-        "lib/net452/extractioncms/css/vendor-f9ca8911.0d3c8d12110600cedbe3.chunk.css",
-        "lib/net452/extractioncms/fonts/0a6f9ed34dce4cc5eb61f12cb9e68ed7.eot",
-        "lib/net452/extractioncms/fonts/0d3af9ed87b47d5a3d414fbc5a70bca7.woff",
-        "lib/net452/extractioncms/fonts/582e81d61e0acaf4ace04a43ba18f2f5.svg",
-        "lib/net452/extractioncms/fonts/68ed1dac06bf0409c18ae7bc62889170.woff",
-        "lib/net452/extractioncms/fonts/78ea68996cf2e7712c0b56f89f49dbf6.ttf",
-        "lib/net452/extractioncms/fonts/7ad17c6085dee9a33787bac28fb23d46.eot",
-        "lib/net452/extractioncms/fonts/96f1c901c087fb64019f7665f7f8aca6.woff2",
-        "lib/net452/extractioncms/fonts/e49d52e74b7689a0727def99da31f3eb.ttf",
-        "lib/net452/extractioncms/fonts/ff423a4251cf2986555523dfe315c42b.svg",
-        "lib/net452/extractioncms/images/rect_red.png",
-        "lib/net452/extractioncms/images/spinner.gif",
-        "lib/net452/extractioncms/index.html",
-        "lib/net452/extractioncms/js/default-main-5af2e613.9c72dd8657ac1b879afe.chunk.js",
-        "lib/net452/extractioncms/js/main.a45cdec4bebb34addd45.bundle.js",
-        "lib/net452/extractioncms/js/pdf.worker.js",
-        "lib/net452/extractioncms/js/vendor-1ebd4f7f.bceb7f355003550c393c.chunk.js",
-        "lib/net452/extractioncms/js/vendor-2a42e354.8c37394f78722a0cdf2c.chunk.js",
-        "lib/net452/extractioncms/js/vendor-7274e1de.53009c1536125cc5e5a2.chunk.js",
-        "lib/net452/extractioncms/js/vendor-7d359b94.5ffe9fa8bdd4412d58fc.chunk.js",
-        "lib/net452/extractioncms/js/vendor-f9ca8911.0d3c8d12110600cedbe3.chunk.js",
-        "lib/net452/fr/UiPath.IntelligentOCR.Activities.Design.resources.dll",
-        "lib/net452/fr/UiPath.IntelligentOCR.Activities.resources.dll",
-        "lib/net452/fr/UiPath.IntelligentOCR.resources.dll",
-        "lib/net452/fr/UiPath.SmartData.ValidationStation.Host.Local.resources.dll",
-        "lib/net452/fr/UiPath.SmartData.ValidationStation.Localization.resources.dll",
-        "lib/net452/ja/UiPath.IntelligentOCR.Activities.Design.resources.dll",
-        "lib/net452/ja/UiPath.IntelligentOCR.Activities.resources.dll",
-        "lib/net452/ja/UiPath.IntelligentOCR.resources.dll",
-        "lib/net452/ja/UiPath.SmartData.ValidationStation.Host.Local.resources.dll",
-        "lib/net452/ja/UiPath.SmartData.ValidationStation.Localization.resources.dll",
-        "lib/net452/ru/UiPath.IntelligentOCR.Activities.Design.resources.dll",
-        "lib/net452/ru/UiPath.IntelligentOCR.Activities.resources.dll",
-        "lib/net452/ru/UiPath.IntelligentOCR.resources.dll",
-        "lib/net452/ru/UiPath.SmartData.ValidationStation.Host.Local.resources.dll",
-        "lib/net452/ru/UiPath.SmartData.ValidationStation.Localization.resources.dll",
-        "uipath.intelligentocr.activities.1.3.0.nupkg.sha512",
-        "uipath.intelligentocr.activities.nuspec"
-      ]
-    },
-    "UiPath.Mail.Activities/1.3.0": {
-      "sha512": "WOCrTHJWhn8MncsdC0K+fbjr9ezI0CynqNCY3MQyjbdTJHlmKvG69kC1/XgdHry0r9hknq2dhB4esgyC5jzmsw==",
-      "type": "package",
-      "path": "uipath.mail.activities/1.3.0",
-      "files": [
-        "lib/net452/MailKit.dll",
-        "lib/net452/MailKit.xml",
-        "lib/net452/MimeKit.dll",
-        "lib/net452/MimeKit.xml",
-        "lib/net452/UiPath.Mail.Activities.Design.dll",
-        "lib/net452/UiPath.Mail.Activities.dll",
-        "lib/net452/UiPath.Mail.dll",
-        "lib/net452/fr/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/fr/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/fr/UiPath.Mail.resources.dll",
-        "lib/net452/ja/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/ja/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/ja/UiPath.Mail.resources.dll",
-        "lib/net452/ru/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/ru/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/ru/UiPath.Mail.resources.dll",
-        "uipath.mail.activities.1.3.0.nupkg.sha512",
-        "uipath.mail.activities.nuspec"
       ]
     },
     "UiPath.Python.Activities/1.1.6863.33404": {
@@ -1744,8 +920,6 @@
     "": [],
     ".NETFramework,Version=v4.6.1": [
       "UiPath.Excel.Activities >= 2.5.0 <= 2.5.0",
-      "UiPath.IntelligentOCR.Activities >= 1.3.0 <= 1.3.0",
-      "UiPath.Mail.Activities >= 1.3.0 <= 1.3.0",
       "UiPath.Python.Activities >= 1.1.6863.33404 <= 1.1.6863.33404",
       "UiPath.System.Activities >= 18.4.2 <= 18.4.2",
       "UiPath.UIAutomation.Activities >= 18.4.3 <= 18.4.3"
@@ -1769,16 +943,6 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[2.5.0, 2.5.0]"
-          },
-          "UiPath.IntelligentOCR.Activities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.3.0, 1.3.0]"
-          },
-          "UiPath.Mail.Activities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.3.0, 1.3.0]"
           },
           "UiPath.Python.Activities": {
             "include": "Runtime",

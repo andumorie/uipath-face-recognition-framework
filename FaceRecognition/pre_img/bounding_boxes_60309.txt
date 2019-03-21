@@ -1,4 +1,4 @@
-./pre_img\Andu\frame_0.png 255 168 384 346
+./pre_img\Andu\frame_0.png 238 154 421 411
 ./pre_img\Andu\frame_1.png 214 157 350 358
 ./pre_img\Andu\frame_10.png 305 120 451 323
 ./pre_img\Andu\frame_11.png 289 127 449 358
