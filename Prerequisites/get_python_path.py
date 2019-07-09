@@ -1,13 +1,22 @@
 import requests
-import sys
 
-for path in sys.path:
-    if path.endswith("Python36") or path.endswith("Python36\\"):
-        with open("../config.csv", "w") as f:
-            f.write("PythonPath,{}".format(path))
-            print("Python Path written to config file.")
-            break
+## Change of the path retrieval part
+from distutils import sysconfig
 
+bindir = sysconfig.get_config_vars("BINDIR")
+
+def convert(bindir):
+    a=''
+    for i in bindir:
+        a = a+i
+        return a
+
+pythonPath = convert(bindir)
+with open("../config.csv", "w") as f:
+    f.write("PythonPath,{}".format(pythonPath))
+    print("=== Python Path written to config file.===")
+
+## Change of the path retrieval part
 
 print("Downloading ML model... Please don't close this window.")
 
