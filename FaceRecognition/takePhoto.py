@@ -5,9 +5,11 @@ import win32api
 
 WINDOW_TITLE = "Take photos using SPACE. Close window when done."
 
-def checkCredentials(user, passw):
+def checkCredentials(user, passw, should_check):
+    if not should_check:
+        return 'Success'
     domain, username = win32api.GetUserNameEx(win32api.NameSamCompatible).split('\\')
-    if user != username:
+    if user.lower() != username.lower():
         return 'Wrong credentials. Please try again.'
     try:
         lg = win32security.LogonUser(user, domain, passw, win32security.LOGON32_LOGON_NETWORK,win32security.LOGON32_PROVIDER_DEFAULT)

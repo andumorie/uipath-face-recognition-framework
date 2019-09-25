@@ -1,1 +1,280 @@
-{"Packages":[{"Package":{"Id":"UiPath.Python.Activities","Version":"1.1.6863.33404"},"Assemblies":["C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.Activities.Design.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.Activities.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x64/Python.Runtime.35.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x64/Python.Runtime.36.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.27.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.33.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.34.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.35.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.36.dll"]},{"Package":{"Id":"UiPath.UIAutomation.Activities","Version":"18.4.3"},"Assemblies":["C:\\Users\\andu.morie\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll","C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.Core.dll","C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.dll","C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/System.Windows.Interactivity.dll","C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro.core/3.0.1\\lib/net45/Caliburn.Micro.dll","C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll","C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll","C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll","C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll","C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll","C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll","C:\\Users\\andu.morie\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath/10.0.6929.25268\\lib/UiPath.Interop.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Docking.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Editors.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Shared.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Text.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Wizard.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/UiPath.UIAutomation.Activities.Design.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/UiPath.UiAutomation.Activities.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/UiPath.Wizards.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.NeuralNet.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Core.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Package.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.dll"]},{"Package":{"Id":"UiPath.System.Activities","Version":"18.4.2"},"Assemblies":["C:\\Users\\andu.morie\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll","C:\\Users\\andu.morie\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.10\\lib/net452/Microsoft.Rest.ClientRuntime.dll","C:\\Users\\andu.morie\\.nuget\\packages\\newtonsoft.json/10.0.3\\lib/net45/Newtonsoft.Json.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Docking.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Shared.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Text.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Wizard.Wpf.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/UiPath.OrchestratorClient.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/UiPath.System.Activities.Design.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/UiPath.System.Activities.dll"]},{"Package":{"Id":"UiPath.Excel.Activities","Version":"2.5.0"},"Assemblies":["C:\\Users\\andu.morie\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll","C:\\Users\\andu.morie\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll","C:\\Users\\andu.morie\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll","C:\\Users\\andu.morie\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll","C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.OOXML.dll","C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.OpenXml4Net.dll","C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.OpenXmlFormats.dll","C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.dll","C:\\Users\\andu.morie\\.nuget\\packages\\sharpziplib/0.86.0\\lib/20/ICSharpCode.SharpZipLib.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.excel.activities/2.5.0\\lib/net452/UiPath.Excel.Activities.Design.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.excel.activities/2.5.0\\lib/net452/UiPath.Excel.Activities.dll","C:\\Users\\andu.morie\\.nuget\\packages\\uipath.excel.activities/2.5.0\\lib/net452/UiPath.Excel.dll"]}],"Conflicts":[]}
+{
+  "Packages": [
+    {
+      "Package": {
+        "Id": "UiPath.Python.Activities",
+        "Version": "1.1.6863.33404"
+      },
+      "Assemblies": [
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.Activities.Design.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.Activities.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x64/Python.Runtime.35.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x64/Python.Runtime.36.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.27.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.33.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.34.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.35.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.36.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Activities",
+        "Version": "18.4.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\andu.morie\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.Core.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/System.Windows.Interactivity.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\caliburn.micro.core/3.0.1\\lib/net45/Caliburn.Micro.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath/10.0.6929.25268\\lib/UiPath.Interop.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.uiautomation.activities/18.4.3\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.NeuralNet.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Core.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.Package.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.vision/1.2.0\\lib/net452/UiPath.Vision.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "18.4.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\andu.morie\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.10\\lib/net452/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\newtonsoft.json/10.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.system.activities/18.4.2\\lib/net461/UiPath.System.Activities.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\andu.morie\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.OOXML.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\npoi/2.2.1\\lib/net40/NPOI.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\sharpziplib/0.86.0\\lib/20/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.excel.activities/2.5.0\\lib/net452/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.excel.activities/2.5.0\\lib/net452/UiPath.Excel.Activities.dll",
+        "C:\\Users\\andu.morie\\.nuget\\packages\\uipath.excel.activities/2.5.0\\lib/net452/UiPath.Excel.dll"
+      ]
+    }
+  ],
+  "Conflicts": [],
+  "ResolvedDependencies": {
+    "AvalonEdit": {
+      "Id": "AvalonEdit",
+      "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "Caliburn.Micro": {
+      "Id": "Caliburn.Micro",
+      "Version": "3.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Caliburn.Micro.Core",
+          "Item2": "[3.0.1, 3.0.1]"
+        }
+      ]
+    },
+    "Caliburn.Micro.Core": {
+      "Id": "Caliburn.Micro.Core",
+      "Version": "3.0.1",
+      "Dependencies": []
+    },
+    "ClosedXML": {
+      "Id": "ClosedXML",
+      "Version": "0.87.1",
+      "Dependencies": [
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        }
+      ]
+    },
+    "CsvHelper": {
+      "Id": "CsvHelper",
+      "Version": "2.13.5",
+      "Dependencies": []
+    },
+    "DocumentFormat.OpenXml": {
+      "Id": "DocumentFormat.OpenXml",
+      "Version": "2.5.0",
+      "Dependencies": []
+    },
+    "Extended.Wpf.Toolkit": {
+      "Id": "Extended.Wpf.Toolkit",
+      "Version": "2.8.0",
+      "Dependencies": []
+    },
+    "Humanizer.Core": {
+      "Id": "Humanizer.Core",
+      "Version": "2.4.2",
+      "Dependencies": []
+    },
+    "Microsoft.Rest.ClientRuntime": {
+      "Id": "Microsoft.Rest.ClientRuntime",
+      "Version": "2.3.10",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[6.0.8, )"
+        }
+      ]
+    },
+    "Microsoft.VisualStudio.OLE.Interop": {
+      "Id": "Microsoft.VisualStudio.OLE.Interop",
+      "Version": "7.10.6071",
+      "Dependencies": []
+    },
+    "Newtonsoft.Json": {
+      "Id": "Newtonsoft.Json",
+      "Version": "10.0.3",
+      "Dependencies": []
+    },
+    "NPOI": {
+      "Id": "NPOI",
+      "Version": "2.2.1",
+      "Dependencies": [
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[0.86.0, )"
+        }
+      ]
+    },
+    "SharpZipLib": {
+      "Id": "SharpZipLib",
+      "Version": "0.86.0",
+      "Dependencies": []
+    },
+    "UiPath": {
+      "Id": "UiPath",
+      "Version": "10.0.6929.25268",
+      "Dependencies": []
+    },
+    "UiPath.Excel.Activities": {
+      "Id": "UiPath.Excel.Activities",
+      "Version": "2.5.0",
+      "Dependencies": [
+        {
+          "Item1": "ClosedXML",
+          "Item2": "[0.87.1, )"
+        },
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        },
+        {
+          "Item1": "Microsoft.VisualStudio.OLE.Interop",
+          "Item2": "[7.10.6071, )"
+        },
+        {
+          "Item1": "NPOI",
+          "Item2": "[2.2.1, )"
+        }
+      ]
+    },
+    "UiPath.Python.Activities": {
+      "Id": "UiPath.Python.Activities",
+      "Version": "1.1.6863.33404",
+      "Dependencies": []
+    },
+    "UiPath.System.Activities": {
+      "Id": "UiPath.System.Activities",
+      "Version": "18.4.2",
+      "Dependencies": [
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.10, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "UiPath.UIAutomation.Activities": {
+      "Id": "UiPath.UIAutomation.Activities",
+      "Version": "18.4.3",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Caliburn.Micro",
+          "Item2": "[3.0.1, )"
+        },
+        {
+          "Item1": "Extended.Wpf.Toolkit",
+          "Item2": "[2.8.0, )"
+        },
+        {
+          "Item1": "Humanizer.Core",
+          "Item2": "[2.4.2, )"
+        },
+        {
+          "Item1": "UiPath",
+          "Item2": "[10.0.6929.25268, )"
+        },
+        {
+          "Item1": "UiPath.Vision",
+          "Item2": "[1.2.0, )"
+        }
+      ]
+    },
+    "UiPath.Vision": {
+      "Id": "UiPath.Vision",
+      "Version": "1.2.0",
+      "Dependencies": []
+    }
+  }
+}

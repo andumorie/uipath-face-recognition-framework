@@ -13,7 +13,7 @@ def convert(bindir):
 
 pythonPath = convert(bindir)
 with open("../config.csv", "w") as f:
-    f.write("PythonPath,{}".format(pythonPath))
+    f.write("PythonPath,{}\nCheckWindowsCredentials,true".format(pythonPath))
     print("=== Python Path written to config file.===")
 
 ## Change of the path retrieval part
