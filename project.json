@@ -1,7 +1,7 @@
 {
   "name": "FaceRecognition",
   "description": "",
-  "main": "CaptureAndTrain.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Python.Activities": "[1.1.6863.33404]",
     "UiPath.UIAutomation.Activities": "[18.4.3]",
