@@ -1,0 +1,360 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CreateDataset" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_PythonPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_DatasetType" Type="InArgument(x:String)" />
+    <x:Property Name="out_Result" Type="OutArgument(x:String)" />
+    <x:Property Name="in_Name" Type="InArgument(x:String)" />
+    <x:Property Name="in_UploadType" Type="InArgument(x:String)" />
+    <x:Property Name="in_LocalFolderPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1827.3333333333333,3433.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CreateDataset_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Windows.Media</x:String>
+      <x:String>UiPath.Callout.Activity</x:String>
+      <x:String>UiPath.ContactCenter.Shared</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="63">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Callout.Activity</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Upload photos to the AI Centre Dataset using local files or the user camera to capture new photos." DisplayName="Upload to Dataset" sap:VirtualizedContainerService.HintSize="639.3333333333334,3368.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FolderPath" />
+      <Variable x:TypeArguments="ss:SecureString" Name="ApiKey" />
+      <Variable x:TypeArguments="x:Int32" Name="NumPhotosTaken" />
+      <Variable x:TypeArguments="x:Object" Name="Result" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReportStatus DisplayName="Report Status - Init create dataset" sap:VirtualizedContainerService.HintSize="577.3333333333334,69.33333333333333" sap2010:WorkflowViewState.IdRef="ReportStatus_5" StatusText="[&quot;Creating dataset for &quot; + in_DatasetType]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign - Init variables" sap:VirtualizedContainerService.HintSize="577.3333333333334,131.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[FolderPath]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[Path.Combine(Path.GetTempPath(), in_DatasetType, in_Name) + "\"]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[out_Result]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="577.3333333333334,82" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[FolderPath]" />
+    <If Condition="[in_UploadType = &quot;camera&quot;]" DisplayName="If upload type is camera" sap:VirtualizedContainerService.HintSize="577.3333333333334,991.3333333333334" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap2010:Annotation.AnnotationText="Use the computer camera to capture photos" DisplayName="Use Camera" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReportStatus DisplayName="Report Status" sap:VirtualizedContainerService.HintSize="338,69.33333333333333" sap2010:WorkflowViewState.IdRef="ReportStatus_1" StatusText="[&quot;Preparing camera...&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\CapturePhoto.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\CapturePhoto.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_PythonPath">[in_PythonPath]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_FolderPath">[FolderPath]</InArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_ResultMessage">[out_Result]</OutArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Function">takePhotos</InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="out_Result">[Result]</OutArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <Assign sap:VirtualizedContainerService.HintSize="338,63.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[NumPhotosTaken]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[CInt(Result)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:ReportStatus DisplayName="Report Status" sap:VirtualizedContainerService.HintSize="338,69.33333333333333" sap2010:WorkflowViewState.IdRef="ReportStatus_2" StatusText="[&quot;The user has taken &quot; + NumPhotosTaken.ToString + &quot; photos&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap2010:Annotation.AnnotationText="Upload local files selected by the user" DisplayName="Use Local File" sap:VirtualizedContainerService.HintSize="498.6666666666667,708.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="s:String[]" Name="PhotoList" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MultipleAssign DisplayName="Multiple Assign Split Photo Path" sap:VirtualizedContainerService.HintSize="436.6666666666667,131.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="s:String[]">[PhotoList]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(in_LocalFolderPath, "*.png")]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:Int32">[NumPhotosTaken]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:Int32">[PhotoList.Count]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+          </ui:MultipleAssign>
+          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Photo" sap:VirtualizedContainerService.HintSize="436.6666666666667,396" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[PhotoList]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="x:String">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,270" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:CopyFile ContinueOnError="{x:Null}" Destination="[FolderPath]" DisplayName="Copy Photo File" sap:VirtualizedContainerService.HintSize="338,159.33333333333334" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[currentItem]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+        </Sequence>
+      </If.Else>
+    </If>
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="577.3333333333334,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <ui:GetRobotCredential AssetName="[in_Config(&quot;Dataset_APIKey&quot;).ToString]" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="577.3333333333334,173.33333333333334" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[apiKey]">
+      <ui:GetRobotCredential.TimeoutMS>
+        <InArgument x:TypeArguments="x:Int32" />
+      </ui:GetRobotCredential.TimeoutMS>
+      <ui:GetRobotCredential.Username>
+        <OutArgument x:TypeArguments="x:String" />
+      </ui:GetRobotCredential.Username>
+    </ui:GetRobotCredential>
+    <ui:ReportStatus DisplayName="Report Status" sap:VirtualizedContainerService.HintSize="534,67" sap2010:WorkflowViewState.IdRef="ReportStatus_3" StatusText="[&quot;Uploading photos to dataset...&quot;]" />
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[FolderPath]" sap:VirtualizedContainerService.HintSize="534,1013" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="500,763" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Uploading file &quot; + CurrentFile.FullName]" />
+            <TryCatch DisplayName="Try Catch - Upload files to dataset" sap:VirtualizedContainerService.HintSize="438,520" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch.Try>
+                <uma:MLStorageUpload Body="{x:Null}" ContinueOnError="{x:Null}" Datasets="{x:Null}" FileName="{x:Null}" FileNameInStorage="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" RuntimeDataset="{x:Null}" RuntimeProject="{x:Null}" SelectedDataset="{x:Null}" SelectedProject="{x:Null}" StatusCode="{x:Null}" ApiKey="[new System.Net.NetworkCredential(string.Empty, apiKey).Password]" Connection="Endpoint" DatasetPublicUrl="[in_Config(&quot;AIC_DatasetEndpoint&quot;).ToString]" DisplayName="Upload File" FilePath="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="350,292" sap2010:WorkflowViewState.IdRef="MLStorageUpload_1" RefreshDataset="False" RefreshProject="False" StoragePath="[in_DatasetType + &quot;/&quot; +  in_Name]">
+                  <uma:MLStorageUpload.Projects>
+                    <um:PageData x:TypeArguments="um:Project" PageNum="1" PageSize="50" TotalCount="8">
+                      <um:PageData.DataList>
+                        <scg:List x:TypeArguments="um:Project" Capacity="8">
+                          <um:Project Id="d1160b2b-ed91-410d-84de-17b98834dbd6" Name="DP_FR_Testing" />
+                          <um:Project Id="8d4f6b83-1ed9-4a94-afa9-c68de2e065da" Name="DP_Labelling_Test" />
+                          <um:Project Id="e68e647e-c95a-4cf7-bf10-0376d87b9207" Name="Ed_PO_French" />
+                          <um:Project Id="2f537d31-8641-4f8d-b5e0-5673e2b09a83" Name="Forum Text Classification" />
+                          <um:Project Id="f27f593f-6ebb-4f20-ad3c-1761c462c324" Name="French PO Extraction" />
+                          <um:Project Id="e0b9541a-1dea-4fae-99f5-5ce146eb6e39" Name="Invoice Extraction for Accts Payable" />
+                          <um:Project Id="bd77d850-2f3d-4208-9d5e-f73e94c0aebe" Name="TestAndra" />
+                          <um:Project Id="1f2550ff-6a13-49e4-ad63-5999fe19e76b" Name="Training Dani" />
+                        </scg:List>
+                      </um:PageData.DataList>
+                    </um:PageData>
+                  </uma:MLStorageUpload.Projects>
+                </uma:MLStorageUpload>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Exception" sap:VirtualizedContainerService.HintSize="400,403" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[out_Result]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[out_Result + "Failed to upload file to Dataset: " + exception.Message + Environment.NewLine]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign DisplayName="Assign decrease number" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[NumPhotosTaken]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[NumPhotosTaken - 1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Failed to upload file to Dataset: &quot; + exception.Message]" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+    <ui:ReportStatus DisplayName="Report Status" sap:VirtualizedContainerService.HintSize="534,67" sap2010:WorkflowViewState.IdRef="ReportStatus_4" StatusText="[&quot;Finished uploading&quot;]" />
+    <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="534,80" sap2010:WorkflowViewState.IdRef="DeleteFolderX_1" Path="[FolderPath]" Recursive="True" />
+    <Assign DisplayName="Assign final message" sap:VirtualizedContainerService.HintSize="534,61" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[out_Result]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">["Finished processing" + Environment.NewLine + Environment.NewLine + out_Result + NumPhotosTaken.ToString + " photos uploaded to dataset." + Environment.NewLine + "Photos uploaded to " + "/" + in_DatasetType + "/" +  in_Name + "/"]</InArgument>
+      </Assign.Value>
+    </Assign>
+  </Sequence>
+</Activity>

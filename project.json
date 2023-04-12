@@ -1,26 +1,63 @@
 {
-  "name": "FaceRecognition",
-  "description": "",
-  "main": "Main.xaml",
+  "name": "FaceRecognitionFramework",
+  "description": "Face Recognition Framework",
+  "main": "Main-UploadDataset.xaml",
   "dependencies": {
-    "UiPath.Python.Activities": "[1.1.6863.33404]",
-    "UiPath.UIAutomation.Activities": "[18.4.3]",
-    "UiPath.System.Activities": "[18.4.2]",
-    "UiPath.Excel.Activities": "[2.5.0]"
+    "UiPath.Callout.Activities": "[2.0.5]",
+    "UiPath.Excel.Activities": "[2.16.1]",
+    "UiPath.Form.Activities": "[2.0.3]",
+    "UiPath.MLServices.Activities": "[2.0.0]",
+    "UiPath.Python.Activities": "[1.6.0]",
+    "UiPath.System.Activities": "[22.10.4]",
+    "UiPath.UIAutomation.Activities": "[22.10.5]",
+    "UiPath.WebAPI.Activities": "[1.13.3]"
   },
-  "schemaVersion": "3.2",
-  "studioVersion": "18.4.1.0",
-  "projectVersion": "1.0.0.0",
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.4.0",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
     "excludedLoggedData": [
       "Private:*",
       "*password*"
-    ]
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
-  "projectType": "Workflow",
-  "libraryOptions": {
-    "includeOriginalXaml": false,
-    "privateWorkflows": []
-  }
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main-UploadDataset.xaml",
+      "uniqueId": "3110e133-6b45-4142-bae6-fcb406a6fef1",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
 }
